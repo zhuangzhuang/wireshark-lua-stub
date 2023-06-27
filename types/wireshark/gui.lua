@@ -1,9 +1,9 @@
 --- @meta
 
 --- @class CProgDlg
---- @field update fun(progress: number, task?: string)
---- @field stoped fun(): boolean
---- @field close fun(): string
+--- @field update fun(self: self,progress: number, task?: string)
+--- @field stoped fun(self: self,): boolean
+--- @field close fun(self: self,): string
 
 ProgDlg = {
     ---comment
@@ -15,14 +15,14 @@ ProgDlg = {
 }
 
 --- @class CTextWindow
---- @field set_atclose fun(action: function)
---- @field set fun(text: string): CTextWindow
---- @field append fun(text: string): CTextWindow
---- @field prepend fun(text: string): CTextWindow
---- @field clear fun()
---- @field get_text fun(): string
---- @field set_editable fun(editable?: boolean): CTextWindow
---- @field add_button fun(label: string, function: function): CTextWindow
+--- @field set_atclose fun(self: self,action: function)
+--- @field set fun(self: self,text: string): CTextWindow
+--- @field append fun(self: self,text: string): CTextWindow
+--- @field prepend fun(self: self,text: string): CTextWindow
+--- @field clear fun(self: self,)
+--- @field get_text fun(self: self,): string
+--- @field set_editable fun(self: self,editable?: boolean): CTextWindow
+--- @field add_button fun(self: self,label: string, function: function): CTextWindow
 
 TextWindow = {
     --- @param title? string

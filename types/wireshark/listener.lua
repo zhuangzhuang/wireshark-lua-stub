@@ -1,10 +1,10 @@
 --- @meta
 
 --- @class CListener
---- @field remove fun()
---- @field packet fun()
---- @field draw fun(pinfo, tvb, tapinfo)
---- @field reset fun()
+--- @field remove fun(self: self,)
+--- @field packet fun(self: self,)
+--- @field draw fun(self: self,pinfo: CPinfo, tvb: CTvb, tapinfo)
+--- @field reset fun(self: self,)
 
 Listener = {
     ---comment

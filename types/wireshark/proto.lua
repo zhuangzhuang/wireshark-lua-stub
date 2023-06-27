@@ -18,13 +18,13 @@ Dissector = {
 --- @alias TPattern number | string
 
 --- @class CDissectorTable
---- @field add fun(pattern: TPattern, dissector: CProto | CDissector)
---- @field set fun(pattern: TPattern, dissector: CProto | CDissector)
---- @field remove fun(pattern: TPattern, dissector: CProto | CDissector)
---- @field remove_all fun(dissector: CProto | CDissector)
---- @field try fun(pattern: TPattern, tvb, pinfo, tree)
---- @field get_dissector fun(pattern: TPattern): CDissector
---- @field add_for_decode_as fun(proto: CProto)
+--- @field add fun(self: self,pattern: TPattern, dissector: CProto | CDissector)
+--- @field set fun(self: self,pattern: TPattern, dissector: CProto | CDissector)
+--- @field remove fun(self: self,pattern: TPattern, dissector: CProto | CDissector)
+--- @field remove_all fun(self: self,dissector: CProto | CDissector)
+--- @field try fun(self: self,pattern: TPattern, tvb, pinfo, tree)
+--- @field get_dissector fun(self: self, pattern: TPattern): CDissector
+--- @field add_for_decode_as fun(self: self,proto: CProto)
 
 DissectorTable = {
     ---comment
@@ -75,7 +75,7 @@ Pref = {
 
 
 --- @class CProto
---- @field register_heuristic fun(listname, func)
+--- @field register_heuristic fun(self: self, listname, func)
 --- @field dissector any
 --- @field prefs any
 --- @field prefs_changed any

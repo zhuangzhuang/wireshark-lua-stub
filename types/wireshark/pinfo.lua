@@ -21,18 +21,18 @@ Address = {
 }
 
 --- @class CColumn
---- @field clear fun()
---- @field set fun(text: string)
---- @field append fun(text: string)
---- @field prepend fun(text: string)
---- @field fence fun()
---- @field clear_fence fun()
+--- @field clear fun(self: self,)
+--- @field set fun(self: self,text: string)
+--- @field append fun(self: self,text: string)
+--- @field prepend fun(self: self,text: string)
+--- @field fence fun(self: self,)
+--- @field clear_fence fun(self: self,)
 
 --- @class CColumns
 
 --- @class CNSTime
 --- @operator call: any
---- @field tonumber fun(): number
+--- @field tonumber fun(self: self,): number
 --- @operator add: CNSTime
 --- @operator sub: CNSTime
 --- @operator unm: CNSTime

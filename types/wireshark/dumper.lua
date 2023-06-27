@@ -1,11 +1,11 @@
 --- @meta
 
 --- @class CDumper
---- @field close fun()
---- @field flush fun()
---- @field dump fun(timestamp: number, pseudoheader, bytearray)
---- @field new_for_current fun(filetype?): CDumper
---- @field dump_current fun()
+--- @field close fun(self: self,)
+--- @field flush fun(self: self,)
+--- @field dump fun(self: self,timestamp: number, pseudoheader, bytearray)
+--- @field new_for_current fun(self: self,filetype?): CDumper
+--- @field dump_current fun(self: self,)
 
 Dumper = {}
 
