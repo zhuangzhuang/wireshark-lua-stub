@@ -1,0 +1,21 @@
+--- @meta
+
+--- @class CTreeItem
+--- @field add_packet_field fun(protofield, tvbrange?, encoding, label?): CTreeItem
+--- @field add fun(protofield?, tvbrange?, value?, label?): CTreeItem
+--- @field add_le fun(protofield?, tvbrange?, value?, label?): CTreeItem
+--- @field set_text fun(text: string): CTreeItem
+--- @field append_text fun(text: string): CTreeItem
+--- @field prepend_text fun(text: string): CTreeItem
+--- @field add_expert_info fun(group?, serverity?, text?): CTreeItem
+--- @field add_proto_expert_info fun(expert, text?: string): CTreeItem
+--- @field add_tvb_expert_info fun(expert, tvb, text?: string): CTreeItem
+--- @field set_generated fun(bool:  boolean): CTreeItem
+--- @field set_hidden fun(bool:  boolean): CTreeItem
+--- @field set_len fun(len: number): CTreeItem
+--- @field referenced fun(protofield): boolean
+--- @field text string
+--- @field visible boolean
+--- @field generated boolean
+--- @field hidden boolean
+--- @field len number
