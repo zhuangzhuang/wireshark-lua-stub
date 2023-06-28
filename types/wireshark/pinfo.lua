@@ -76,7 +76,7 @@ NSTime = {
 --- @field p2p_dir boolean
 --- @field match boolean
 --- @field columns boolean
---- @field cols boolean
+--- @field cols {protocol: CColumn, info: CColumn}
 --- @field private boolean
 --- @field hi boolean
 --- @field lo boolean

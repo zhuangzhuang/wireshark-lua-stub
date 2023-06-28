@@ -29,12 +29,12 @@
 --- @class CTvb
 --- @field reported_len fun(self: self,): number
 --- @field captured_len fun(self: self,): number
---- @field len fun(self: self,): number
---- @field reported_length_remaining fun(self: self,): number
+--- @field len fun(self: self,): number Obtain the captured length (amount saved in the capture process) of a Tvb. Same as captured_len; kept only for backwards compatibility
+--- @field reported_length_remaining fun(self: self, offset: number): number Obtain the reported (not captured) length of packet data to end of a Tvb or 0 if the offset is beyond the end of the Tvb.
 --- @field bytes fun(self: self,offset?: number, length?: number): CByteArray
 --- @field offset fun(self: self,): number
 --- @operator call: CByteArray
---- @field range fun(self: self,offset?: number, length?: number): number
+--- @field range fun(self: self,offset?: number, length?: number): CTvbRange Creates a TvbRange from this Tvb.
 --- @field raw fun(self: self,offset?: number, length?: number): number
 
 --- @class CTvbRange

@@ -2,7 +2,7 @@
 
 --- @class CTreeItem
 --- @field add_packet_field fun(self: self,protofield, tvbrange?, encoding, label?): CTreeItem
---- @field add fun(self: self,protofield?, tvbrange?, value?, label?): CTreeItem
+--- @field add fun(self: self,protofield?: CProto | CProtoField, tvbrange?: CTvbRange, value?, label?): CTreeItem
 --- @field add_le fun(self: self,protofield?, tvbrange?, value?, label?): CTreeItem
 --- @field set_text fun(self: self,text: string): CTreeItem
 --- @field append_text fun(self: self,text: string): CTreeItem

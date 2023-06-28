@@ -76,13 +76,13 @@ Pref = {
 
 --- @class CProto
 --- @field register_heuristic fun(self: self, listname, func)
---- @field dissector any
+--- @field dissector fun(tvb: CTvb, pktinfo: CPinfo, root: CTreeItem)
 --- @field prefs any
 --- @field prefs_changed any
---- @field init any
+--- @field init fun()
 --- @field name any
 --- @field description any
---- @field fields any
+--- @field fields {[string]: CProtoField}
 --- @field experts any
 
 
@@ -94,6 +94,13 @@ Proto = {
     new = function(name, desc)
     end
 }
+
+---comment
+---@param name any
+---@param desc any
+--- @return CProto
+function Proto(name, desc)
+end
 
 --- @class CProtoExpert
 
